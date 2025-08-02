@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #a4d2f8;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+main {
+  padding: 20px;
+}
+.restaurant, .menu-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.menu-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+button {
+  background-color: #a4d2f8;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #2b2ebe;
+}
+.cart {
+  margin-top: 30px;
+  border-top: 2px solid #ddd;
+  padding-top: 10px;
+}
