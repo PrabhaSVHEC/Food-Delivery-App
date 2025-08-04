@@ -5,9 +5,9 @@ body {
 }
 header {
   background-color: #a4d2f8;
-  background-image: url(images/pizza.jpg);
+  background-image: url(images/frontbanner.PNG);
   color: white;
-  padding: 50px;
+  padding: 60px;
   text-align: center;
 }
 main {
