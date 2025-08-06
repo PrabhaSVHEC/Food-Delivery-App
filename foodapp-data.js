@@ -1,3 +1,4 @@
+// List of Restaurants with their menus
 const restaurants = [
   {
     id: 1,
@@ -12,7 +13,7 @@ const restaurants = [
     name: "McD",
     menu: [
       { id: 3, name: "Veggie Burger", price: 199, image: "images/vegburger.jpg" },
-      { id: 4, name: "Chicken Burger", price: 249, image: "images/pizza.jpg"}
+      { id: 4, name: "Chicken Burger", price: 249, image: "images/pizza.jpg" }
     ]
   }
 ];

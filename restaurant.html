@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Restaurant Menu</title>
-  <link rel="stylesheet" href="foodapp.css">
+  <link rel="stylesheet" href="foodapp.css" />
 </head>
+
 <body>
-  <header><h1 id="restaurantName">Restaurant Menu</h1></header>
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <p>Are you sure you want to place the order?</p>
+      <div class="modal-buttons">
+        <button onclick="confirmOrder()">Yes</button>
+        <button onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <div style="font-size: 40px; color: green;">✔️</div>
+      <p>Your order has been placed successfully!</p>
+      <button onclick="closeSuccessModal()">OK</button>
+    </div>
+  </div>
+
+  <header>
+    <h1 id="restaurantName">Restaurant Menu</h1>
+  </header>
+
   <main>
+    <button onclick="goHome()" class="text-button">← Back to Home</button>
     <div id="menuItems" class="menu-list"></div>
+
     <div class="cart">
       <h2>Cart</h2>
       <ul id="cartItems"></ul>
       <button onclick="placeOrder()">Place Order</button>
     </div>
   </main>
+
   <script src="foodapp-data.js"></script>
   <script src="foodapp-script.js"></script>
 </body>
